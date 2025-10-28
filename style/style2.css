@@ -1,0 +1,79 @@
+/* =======================
+   STYLE2.CSS (Halaman Tentang)
+   ======================= */
+
+body {
+  background: var(--navy);
+  color: var(--gray-light);
+  font-family: "Roboto", sans-serif;
+}
+
+header.tentang {
+  text-align: center;
+  position: relative;
+  padding: 80px 20px;
+  color: var(--white);
+}
+
+header.tentang .bg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: brightness(40%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header.tentang .title h1 {
+  font-size: 36px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+header .tentang2 {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.tim {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.tim h2 {
+  font-size: 28px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.tim-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.tim-isi {
+  background: var(--navy-light);
+  color: var(--gray-light);
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--shadow);
+  width: 220px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.tim-isi:hover {
+  transform: translateY(-5px);
+}
+
+.tim-isi .foto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
